@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C4A670512FB586A0077BA9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670412FB586A0077BA9F /* UIKit.framework */; };
+		4C4A670712FB586A0077BA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670612FB586A0077BA9F /* Foundation.framework */; };
+		4C4A670912FB586A0077BA9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670812FB586A0077BA9F /* CoreGraphics.framework */; };
+		4C4A670F12FB586A0077BA9F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A670D12FB586A0077BA9F /* InfoPlist.strings */; };
+		4C4A671212FB586A0077BA9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A671112FB586A0077BA9F /* main.m */; };
+		4C4A671512FB586A0077BA9F /* WBWheelControlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */; };
+		4C4A671812FB586A0077BA9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A671612FB586A0077BA9F /* MainWindow.xib */; };
+		4C4A671B12FB586A0077BA9F /* WBWheelControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */; };
+		4C4A671E12FB586A0077BA9F /* WBWheelControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C4A670012FB586A0077BA9F /* WBWheelControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBWheelControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4A670412FB586A0077BA9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4C4A670612FB586A0077BA9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4C4A670812FB586A0077BA9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4C4A670C12FB586A0077BA9F /* WBWheelControl-Info.plist */ = {isa = PBXFileReference; path = "WBWheelControl-Info.plist"; sourceTree = "<group>"; };
+		4C4A670E12FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C4A671012FB586A0077BA9F /* WBWheelControl-Prefix.pch */ = {isa = PBXFileReference; path = "WBWheelControl-Prefix.pch"; sourceTree = "<group>"; };
+		4C4A671112FB586A0077BA9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */ = {isa = PBXFileReference; path = WBWheelControlAppDelegate.h; sourceTree = "<group>"; };
+		4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBWheelControlAppDelegate.m; sourceTree = "<group>"; };
+		4C4A671712FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */ = {isa = PBXFileReference; path = WBWheelControlViewController.h; sourceTree = "<group>"; };
+		4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBWheelControlViewController.m; sourceTree = "<group>"; };
+		4C4A671D12FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WBWheelControlViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C4A66FD12FB586A0077BA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4A670512FB586A0077BA9F /* UIKit.framework in Frameworks */,
+				4C4A670712FB586A0077BA9F /* Foundation.framework in Frameworks */,
+				4C4A670912FB586A0077BA9F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C4A66F512FB58690077BA9F = {
+			isa = PBXGroup;
+			children = (
+				4C4A670A12FB586A0077BA9F /* WBWheelControl */,
+				4C4A670312FB586A0077BA9F /* Frameworks */,
+				4C4A670112FB586A0077BA9F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C4A670112FB586A0077BA9F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A670012FB586A0077BA9F /* WBWheelControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C4A670312FB586A0077BA9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A670412FB586A0077BA9F /* UIKit.framework */,
+				4C4A670612FB586A0077BA9F /* Foundation.framework */,
+				4C4A670812FB586A0077BA9F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C4A670A12FB586A0077BA9F /* WBWheelControl */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */,
+				4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */,
+				4C4A671612FB586A0077BA9F /* MainWindow.xib */,
+				4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */,
+				4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */,
+				4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */,
+				4C4A670B12FB586A0077BA9F /* Supporting Files */,
+			);
+			path = WBWheelControl;
+			sourceTree = "<group>";
+		};
+		4C4A670B12FB586A0077BA9F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A670C12FB586A0077BA9F /* WBWheelControl-Info.plist */,
+				4C4A670D12FB586A0077BA9F /* InfoPlist.strings */,
+				4C4A671012FB586A0077BA9F /* WBWheelControl-Prefix.pch */,
+				4C4A671112FB586A0077BA9F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C4A66FF12FB586A0077BA9F /* WBWheelControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C4A672112FB586A0077BA9F /* Build configuration list for PBXNativeTarget "WBWheelControl" */;
+			buildPhases = (
+				4C4A66FC12FB586A0077BA9F /* Sources */,
+				4C4A66FD12FB586A0077BA9F /* Frameworks */,
+				4C4A66FE12FB586A0077BA9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WBWheelControl;
+			productName = WBWheelControl;
+			productReference = 4C4A670012FB586A0077BA9F /* WBWheelControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C4A66F712FB58690077BA9F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Wooly Beast Software, LLC";
+			};
+			buildConfigurationList = 4C4A66FA12FB58690077BA9F /* Build configuration list for PBXProject "WBWheelControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C4A66F512FB58690077BA9F;
+			productRefGroup = 4C4A670112FB586A0077BA9F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C4A66FF12FB586A0077BA9F /* WBWheelControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C4A66FE12FB586A0077BA9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4A670F12FB586A0077BA9F /* InfoPlist.strings in Resources */,
+				4C4A671812FB586A0077BA9F /* MainWindow.xib in Resources */,
+				4C4A671E12FB586A0077BA9F /* WBWheelControlViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C4A66FC12FB586A0077BA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C4A671212FB586A0077BA9F /* main.m in Sources */,
+				4C4A671512FB586A0077BA9F /* WBWheelControlAppDelegate.m in Sources */,
+				4C4A671B12FB586A0077BA9F /* WBWheelControlViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C4A670D12FB586A0077BA9F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4A670E12FB586A0077BA9F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4C4A671612FB586A0077BA9F /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4A671712FB586A0077BA9F /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C4A671D12FB586A0077BA9F /* en */,
+			);
+			name = WBWheelControlViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C4A671F12FB586A0077BA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C4A672012FB586A0077BA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		4C4A672212FB586A0077BA9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WBWheelControl/WBWheelControl-Prefix.pch";
+				INFOPLIST_FILE = "WBWheelControl/WBWheelControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4C4A672312FB586A0077BA9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WBWheelControl/WBWheelControl-Prefix.pch";
+				INFOPLIST_FILE = "WBWheelControl/WBWheelControl-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C4A66FA12FB58690077BA9F /* Build configuration list for PBXProject "WBWheelControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4A671F12FB586A0077BA9F /* Debug */,
+				4C4A672012FB586A0077BA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C4A672112FB586A0077BA9F /* Build configuration list for PBXNativeTarget "WBWheelControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C4A672212FB586A0077BA9F /* Debug */,
+				4C4A672312FB586A0077BA9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C4A66F712FB58690077BA9F /* Project object */;
+}
