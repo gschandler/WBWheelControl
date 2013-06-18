@@ -39,6 +39,7 @@ static CGFloat  LineLength( CGPoint start, CGPoint end );
 static CGPoint  UnitVector( CGPoint vector );
 static CGPoint	ResizeVector( CGPoint vector, CGFloat length );
 static CGPoint	CGPointOffset( CGPoint point, CGFloat dx, CGFloat dy );
+static const CGFloat kDefaultTrackWidth = 44.0;
 
 // NSDictionary key generation functions
 static id ThumbImageKeyForState( UIControlState state );
@@ -56,7 +57,7 @@ static id BackgroundImageKeyForState( UIControlState state );
 
 - (void)trackTouch:(UITouch *)touch;
 - (void)configureControl;
-- (BOOL)pointIsInside:(CGPoint)point;
+- (BOOL)pointIsInsideTrack:(CGPoint)point;
 @end
 
 @interface WBWheelControl(Tint)
@@ -316,12 +317,12 @@ static id BackgroundImageKeyForState( UIControlState state );
 
 //
 //	Method:	
-//		pointIsInside:
+//		pointIsInsideTrack:
 //
 //	Synopsis:
 //		
 //
-- (BOOL)pointIsInside:(CGPoint)point
+- (BOOL)pointIsInsideTrack:(CGPoint)point
 {
 	CGFloat length = LineLength( CGPointZero, point);
 	return (length <= self.outerRadius && length >= self.innerRadius);
@@ -338,8 +339,9 @@ static id BackgroundImageKeyForState( UIControlState state );
 {
     _trackingScale = 0.25;
 	_showThumbOnTouchesOnly = YES;
-	_radius = MIN(CGRectGetWidth(self.bounds),CGRectGetHeight(self.bounds));
+	_radius = MIN(CGRectGetWidth(self.bounds),CGRectGetHeight(self.bounds))/2.0;
 	_stateInfo = [NSMutableDictionary new];
+	_width = kDefaultTrackWidth;
 	
 	[self setThumbImage:self.thumbView.image forState:UIControlStateNormal];
 	[self setBackgroundImage:self.backgroundView.image forState:UIControlStateNormal];
@@ -413,7 +415,7 @@ static id BackgroundImageKeyForState( UIControlState state );
 	NSLog(@"%@",NSStringFromSelector(_cmd));
     BOOL tracking = [super beginTrackingWithTouch:touch withEvent:event];
     CGPoint location = [touch previousLocationRelativeToCenterInView:self];
-	tracking = [self pointIsInside:location];
+	tracking = [self pointIsInsideTrack:location];
     [self trackTouch:touch];
 	return tracking;
 }
@@ -508,9 +510,8 @@ enum {
 {
     self.thumbView.hidden = !self.tracking;
     if ( self.tracking ) {
-        CGFloat radius = ((_radius * 2.0) - _width) / 2.0;
         CGPoint location = [touch locationRelativeToCenterInView:self];
-		CGPoint thumbCenter = ResizeVector(location, radius);
+		CGPoint thumbCenter = ResizeVector(location, self.middleRadius);
 		thumbCenter = CGPointOffset(thumbCenter,self.wheelCenter.x,self.wheelCenter.y);
         self.thumbView.center = thumbCenter;
 //		NSLog(@"%@ %@",NSStringFromCGPoint(thumbCenter),NSStringFromCGRect(self.thumbView.bounds));
