@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C0C3DEA17710B6000D79281 /* Thumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C3DE817710B6000D79281 /* Thumb.png */; };
+		4C0C3DEB17710B6000D79281 /* Wheel.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C0C3DE917710B6000D79281 /* Wheel.png */; };
+		4C0C3DEF17710B8400D79281 /* WBWheelControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0C3DEE17710B8400D79281 /* WBWheelControl.m */; };
 		4C4A670512FB586A0077BA9F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670412FB586A0077BA9F /* UIKit.framework */; };
 		4C4A670712FB586A0077BA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670612FB586A0077BA9F /* Foundation.framework */; };
 		4C4A670912FB586A0077BA9F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4A670812FB586A0077BA9F /* CoreGraphics.framework */; };
@@ -16,23 +19,29 @@
 		4C4A671812FB586A0077BA9F /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A671612FB586A0077BA9F /* MainWindow.xib */; };
 		4C4A671B12FB586A0077BA9F /* WBWheelControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */; };
 		4C4A671E12FB586A0077BA9F /* WBWheelControlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */; };
+		4CA0EE0A13DF377D00D55DD5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA0EE0913DF377D00D55DD5 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C0C3DE817710B6000D79281 /* Thumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Thumb.png; path = images/Thumb.png; sourceTree = "<group>"; };
+		4C0C3DE917710B6000D79281 /* Wheel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Wheel.png; path = images/Wheel.png; sourceTree = "<group>"; };
+		4C0C3DED17710B8400D79281 /* WBWheelControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBWheelControl.h; sourceTree = SOURCE_ROOT; };
+		4C0C3DEE17710B8400D79281 /* WBWheelControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBWheelControl.m; sourceTree = SOURCE_ROOT; };
 		4C4A670012FB586A0077BA9F /* WBWheelControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBWheelControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C4A670412FB586A0077BA9F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4C4A670612FB586A0077BA9F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4C4A670812FB586A0077BA9F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4C4A670C12FB586A0077BA9F /* WBWheelControl-Info.plist */ = {isa = PBXFileReference; path = "WBWheelControl-Info.plist"; sourceTree = "<group>"; };
+		4C4A670C12FB586A0077BA9F /* WBWheelControl-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WBWheelControl-Info.plist"; sourceTree = "<group>"; };
 		4C4A670E12FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4C4A671012FB586A0077BA9F /* WBWheelControl-Prefix.pch */ = {isa = PBXFileReference; path = "WBWheelControl-Prefix.pch"; sourceTree = "<group>"; };
+		4C4A671012FB586A0077BA9F /* WBWheelControl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBWheelControl-Prefix.pch"; sourceTree = "<group>"; };
 		4C4A671112FB586A0077BA9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */ = {isa = PBXFileReference; path = WBWheelControlAppDelegate.h; sourceTree = "<group>"; };
+		4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBWheelControlAppDelegate.h; sourceTree = "<group>"; };
 		4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBWheelControlAppDelegate.m; sourceTree = "<group>"; };
 		4C4A671712FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */ = {isa = PBXFileReference; path = WBWheelControlViewController.h; sourceTree = "<group>"; };
+		4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBWheelControlViewController.h; sourceTree = "<group>"; };
 		4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBWheelControlViewController.m; sourceTree = "<group>"; };
 		4C4A671D12FB586A0077BA9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WBWheelControlViewController.xib; sourceTree = "<group>"; };
+		4CA0EE0913DF377D00D55DD5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +52,26 @@
 				4C4A670512FB586A0077BA9F /* UIKit.framework in Frameworks */,
 				4C4A670712FB586A0077BA9F /* Foundation.framework in Frameworks */,
 				4C4A670912FB586A0077BA9F /* CoreGraphics.framework in Frameworks */,
+				4CA0EE0A13DF377D00D55DD5 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C0C3DEC17710B7500D79281 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */,
+				4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */,
+				4C4A671612FB586A0077BA9F /* MainWindow.xib */,
+				4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */,
+				4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */,
+				4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */,
+			);
+			name = Sample;
+			sourceTree = "<group>";
+		};
 		4C4A66F512FB58690077BA9F = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +95,7 @@
 				4C4A670412FB586A0077BA9F /* UIKit.framework */,
 				4C4A670612FB586A0077BA9F /* Foundation.framework */,
 				4C4A670812FB586A0077BA9F /* CoreGraphics.framework */,
+				4CA0EE0913DF377D00D55DD5 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -79,12 +103,9 @@
 		4C4A670A12FB586A0077BA9F /* WBWheelControl */ = {
 			isa = PBXGroup;
 			children = (
-				4C4A671312FB586A0077BA9F /* WBWheelControlAppDelegate.h */,
-				4C4A671412FB586A0077BA9F /* WBWheelControlAppDelegate.m */,
-				4C4A671612FB586A0077BA9F /* MainWindow.xib */,
-				4C4A671912FB586A0077BA9F /* WBWheelControlViewController.h */,
-				4C4A671A12FB586A0077BA9F /* WBWheelControlViewController.m */,
-				4C4A671C12FB586A0077BA9F /* WBWheelControlViewController.xib */,
+				4C0C3DED17710B8400D79281 /* WBWheelControl.h */,
+				4C0C3DEE17710B8400D79281 /* WBWheelControl.m */,
+				4C0C3DEC17710B7500D79281 /* Sample */,
 				4C4A670B12FB586A0077BA9F /* Supporting Files */,
 			);
 			path = WBWheelControl;
@@ -93,6 +114,8 @@
 		4C4A670B12FB586A0077BA9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C0C3DE817710B6000D79281 /* Thumb.png */,
+				4C0C3DE917710B6000D79281 /* Wheel.png */,
 				4C4A670C12FB586A0077BA9F /* WBWheelControl-Info.plist */,
 				4C4A670D12FB586A0077BA9F /* InfoPlist.strings */,
 				4C4A671012FB586A0077BA9F /* WBWheelControl-Prefix.pch */,
@@ -154,6 +177,8 @@
 				4C4A670F12FB586A0077BA9F /* InfoPlist.strings in Resources */,
 				4C4A671812FB586A0077BA9F /* MainWindow.xib in Resources */,
 				4C4A671E12FB586A0077BA9F /* WBWheelControlViewController.xib in Resources */,
+				4C0C3DEA17710B6000D79281 /* Thumb.png in Resources */,
+				4C0C3DEB17710B6000D79281 /* Wheel.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +192,7 @@
 				4C4A671212FB586A0077BA9F /* main.m in Sources */,
 				4C4A671512FB586A0077BA9F /* WBWheelControlAppDelegate.m in Sources */,
 				4C4A671B12FB586A0077BA9F /* WBWheelControlViewController.m in Sources */,
+				4C0C3DEF17710B8400D79281 /* WBWheelControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +302,7 @@
 				4C4A672312FB586A0077BA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
